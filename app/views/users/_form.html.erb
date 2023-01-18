@@ -13,7 +13,7 @@
     <%= f.label :password, class: "form-label text-light" %>
     <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
 
-    <%= f.submit "Sign up", class: "btn btn-outline-light btn-lg mt-3" %>
+    <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "btn btn-outline-light btn-lg mt-3") %>
 
   <% end %>
   <div class="mb-4 bottom-part">
